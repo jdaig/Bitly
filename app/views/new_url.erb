@@ -1,0 +1,11 @@
+<h1>Fake Bitly</h1>
+<h1><%= @message %></h1>
+<p>Estas son tanto tus urls largas como las de bitly: </p>
+<p>
+  <% @url_all.each do |link|%>
+   <!-- <p><%= link.url_nueva %></p> -->
+    <a href="/<%=link.url_nueva%>" ><%= link.url_nueva %></a>    <!--  '<%= link.url_nueva %>' -->
+    <br>
+    <%end%>
+</p>
+
